@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Starbucks</title>
+        <link rel="icon" href="../img/starbucksLogo.png" type="image/x-icon">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header>
+            <section class="navbar">
+                <a href="../main.html" style="text-decoration: none;"><img src="../img/starbucksLogo.png" alt="Logo de Starbucks" class="logoNavbar"></a>
+                <section class="navbarOptions">
+                    <a href="../main.html" style="text-decoration: none;"><h1 class="tittle">Starbucks</h1></a>
+                    <nav>
+                        <a href="../main.html" class="navButton">Inicio</a>
+                        <a href="./menu.html" class="navButton">Menu</a>
+                        <a href="./reservas.html" class="navButton">Reservas</a>
+                    </nav>
+                </section>
+            </section>
+        </header>
+
+        <main>
+            
+            <section class="container">
+                <h2 class="subtittle subtittleLeft">Reserva tu mesa</h2>
+                
+                <form action="#" class="formReservation">
+                    
+                    <div class="formGroup">
+                        <label class="text formLabel">Nombre completo:</label>
+                        <input type="text" class="formInput" required>
+                    </div>
+
+                    <div class="formGroup">
+                        <label class="text formLabel">Correo electrónico:</label>
+                        <input type="email" class="formInput" required>
+                    </div>
+
+                    <div class="formGroup">
+                        <label class="text formLabel">Teléfono:</label>
+                        <input type="tel" class="formInput" required>
+                    </div>
+
+                    <div class="formGroup">
+                        <label class="text formLabel">Fecha de la reserva:</label>
+                        <input type="date" class="formInput" required>
+                    </div>
+
+                    <div class="formGroup">
+                        <label class="text formLabel">Hora:</label>
+                        <select class="formInput">
+                            <option value="07:00">07:00</option>
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                        </select>
+                    </div>
+
+                    <div class="formGroup">
+                        <label class="text formLabel">Número de personas:</label>
+                        <input type="number" class="formInputNumber" min="1" max="10" required>
+                    </div>
+
+                    <fieldset class="formFieldset">
+                        <legend class="text formLegend">Motivo de la visita</legend>
+                        <div class="formOption">
+                            <input type="radio" id="desayuno" name="motivo" value="desayuno" checked>
+                            <label for="desayuno" class="text">Desayuno</label>
+                        </div>
+                        <div class="formOption">
+                            <input type="radio" id="almuerzo" name="motivo" value="almuerzo">
+                            <label for="almuerzo" class="text">Almuerzo</label>
+                        </div>
+                        <div class="formOption">
+                            <input type="radio" id="cena" name="motivo" value="cena">
+                            <label for="cena" class="text">Cena</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="formFieldset">
+                        <legend class="text formLegend">Preferencias</legend>
+                        <div class="formOption">
+                            <input type="checkbox" id="ventana" name="pref" value="ventana">
+                            <label for="ventana" class="text">Mesa junto a la ventana</label>
+                        </div>
+                        <div class="formOption">
+                            <input type="checkbox" id="bebe" name="pref" value="bebe">
+                            <label for="bebe" class="text">Silla alta para bebé</label>
+                        </div>
+                        <div class="formOption">
+                            <input type="checkbox" id="especial" name="pref" value="especial">
+                            <label for="especial" class="text">Es una celebración especial</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="formGroup">
+                        <label class="text formLabel">Comentarios adicionales:</label>
+                        <textarea rows="4" class="formInput formTextarea"></textarea>
+                    </div>
+
+                    <button type="submit" class="btnSubmit">
+                        Confirmar reserva
+                    </button>
+
+                </form>
+            </section>
+
+        </main>
+
+        <footer>
+            <section class="footer">
+                <p>@2026 Starbucks. Todos los derechos reservados.</p>
+            </section>
+        </footer>
+
+    </body>
+</html> 
